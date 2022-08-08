@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Dhurjati&family=Roboto:ital,wght@0,100;0,300;0,400;0,700;1,900&display=swap');
+body {
+    width: 100vw;
+    height: 97vh;
+    position: relative;
+    background: radial-gradient(circle at center, #f7ccbfb0 0%, #e3f0f27b 33.33%, #daedbd95 66.67%, #fcf3ea83 100%), #F7F9EF;
+}
+
+.window {
+    width: 97vw;
+    height: 95vh;
+    margin: 0px auto;
+    border: 2px solid #393939;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    border-bottom: 2px solid #393939;
+}
+
+header .logo {
+    width: clamp(250px, 26vw, 350px);
+    text-align: center;
+    padding: 1vh 4vw;
+    font-family: 'Dhurjati', sans-serif;
+    font-size: 8vh;
+    border-right: 2px solid #393939;
+    cursor: pointer;
+    color: #393939;
+}
+
+.logo:active {
+    background: #e3f0f2;
+}
+
+.menu {
+    padding: 4vh 3vw;
+    border-right: 2px solid #393939;
+}
+
+.menu ul {
+    list-style: none;
+    text-align: center;
+}
+
+.menu li {
+    display: inline-flex;
+    margin-right: 2.5vw;
+    font-family: 'Roboto', sans-serif;
+    text-transform: lowercase;
+    color: #393939;
+    font-size: clamp(14px, 1.8vw, 18px);
+    cursor: pointer;
+}
+
+.menu li:hover {
+    opacity: 0.6;
+}
+
+.icons {
+    text-align: center;
+    margin: 0px auto;
+    padding: 6vh 3vw;
+}
+
+.icons img {
+    margin-right: 1vw;
+    max-width: 2vw;
+    width: 20px;
+    cursor: pointer;
+}
+
+.icons img:hover {
+    opacity: 0.6;
+}
+
+.welcome {
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.welcome .elipse {
+    position: absolute;
+    width: 40vh;
+    height: 40vh;
+    left: 30vw;
+    top: 26vh;
+    background: #F3F4BC;
+    border-radius: 50%;
+}
+
+.welcome .elipse:hover {
+    animation: elipse;
+    animation-duration: 2s;
+}
+
+@keyframes elipse {
+    from {
+        background: #F3F4BC;
+    }
+    to {
+        background: #b8b980;
+    }
+}
+
+.welcome .line {
+    position: absolute;
+    width: 40vh;
+    left: 16vw;
+    top: 65vh;
+    transform: rotate(26deg);
+    border: 4px solid #a6ff217a;
+}
+
+.welcome .line:hover {
+    animation: line;
+    animation-duration: 2s;
+}
+
+@keyframes line {
+    from {
+        transform: rotate(26deg);
+    }
+    to {
+        transform: rotate(-50deg);
+    }
+}
+
+.welcome .sunglasses {
+    position: absolute;
+    left: 40vw;
+    top: 30vh;
+    transform: rotate(-10deg);
+}
+
+.welcome .sunglasses:hover {
+    animation: sungl;
+    animation-duration: 2s;
+}
+
+@keyframes sungl {
+    0% {
+        transform: rotate(-5deg);
+    }
+    25% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(-5deg);
+    }
+    75% {
+        transform: rotate(5deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+.welcome .sunglasses img {
+    width: 70vh;
+    opacity: 0.8
+}
+
+.welcome .logo {
+    position: absolute;
+    left: 20vw;
+    top: 20vh;
+    color: #fff;
+    font-family: 'Dhurjati';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10vh;
+    line-height: 185px;
+    text-shadow: -4px 0 rgba(0, 0, 0, 0.793), 0 4px rgba(0, 0, 0, 0.916), 2px 0 rgba(0, 0, 0, 0.812), 0 -2px rgba(0, 0, 0, 0.848);
+}
+
+.welcome .small-text {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 100;
+    font-size: 20px;
+    position: absolute;
+    top: 65vh;
+    left: 60vw;
+    text-transform: lowercase;
+}
+
+.buttons {
+    position: absolute;
+    bottom: 7vh;
+    left: 30vw;
+}
+
+.buttons button {
+    margin-right: 10vw;
+}
+
+.button-shadow {
+    padding: 2px 40px;
+    font-family: 'Dhurjati', sans-serif;
+    color: #393939;
+    font-size: 4vh;
+    background-color: #fff;
+    border: 2px solid #393939;
+    box-shadow: 6px 6px 0px 0px #393939;
+    cursor: pointer;
+}
+
+.button-shadow:active {
+    animation: button;
+    animation-duration: 1s;
+}
+
+@keyframes button {
+    to {
+        filter: invert(20%);
+        box-shadow: none;
+    }
+}
+
+.burger-menu {
+    display: none;
+}
