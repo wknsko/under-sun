@@ -1,35 +1,36 @@
 <template>
-
-    <h2>New Collection</h2>
-    <div class="items">
-        <div class="item" v-for="i in 7" :key="i">
-            <div class="name">Etude</div>
-            <img src="https://cdn-images.farfetch-contents.com/18/72/47/90/18724790_40462333_1000.jpg" alt="">
-            <div class="info">
-                <div class="price">$150</div>
-                <div class="quantity">
-                    <div @click="count(i ,'-')" class="del">-</div>
-                    <div class="count">{{num}}</div>
-                    <div @click="count(i, '+')" class="add">+</div>
+    <div class="products">
+        <h2>New Collection</h2>
+        <div class="items">
+            <div class="item" v-for="i in 3" :key="i">
+                <div class="name">Etude</div>
+                <img src="https://cdn-images.farfetch-contents.com/18/72/47/90/18724790_40462333_1000.jpg" alt="">
+                <div class="info">
+                    <div class="price">$150</div>
+                    <div class="quantity">
+                        <div @click="count(i ,'-')" class="del">-</div>
+                        <div class="count">{{num}}</div>
+                        <div @click="count(i, '+')" class="add">+</div>
+                    </div>
                 </div>
+                <button class="btn-add">Add to Bag</button>
             </div>
-            <button class="btn-add">Add to Bag</button>
         </div>
-    </div>
-<h2>Outlet</h2>
-    <div class="items">
-        <div class="item" v-for="i in 7" :key="i">
-            <div class="name">Etude</div>
-            <img src="https://cdn-images.farfetch-contents.com/18/72/47/90/18724790_40462333_1000.jpg" alt="">
-            <div class="info">
-                <div class="price">$150</div>
-                <div class="quantity">
-                    <div @click="count(i ,'-')" class="del">-</div>
-                    <div class="count">{{num}}</div>
-                    <div @click="count(i, '+')" class="add">+</div>
+        <h2>Outlet</h2>
+        <div class="items">
+            <div class="item" v-for="i in 3" :key="i">
+                <div class="name">Etude</div>
+                <img src="https://cdn-images.farfetch-contents.com/18/72/47/90/18724790_40462333_1000.jpg" alt="">
+                <div class="info">
+                    <div class="price">$150</div>
+                    <div class="quantity">
+                        <div @click="count(i ,'-')" class="del">-</div>
+                        <div class="count">{{num}}</div>
+                        <div @click="count(i, '+')" class="add">+</div>
+                    </div>
                 </div>
+                <button class="btn-add">Add to Bag</button>
             </div>
-            <button class="btn-add">Add to Bag</button>
         </div>
     </div>
 </template>
@@ -57,7 +58,7 @@ export default {
 </script>
 
 <style>
-h2 {
+.products h2 {
     font-family: 'Dhurjati';
     font-size: 50px;
     margin-top: -20px;
@@ -73,7 +74,7 @@ h2 {
     
 }
 .item {
-    width: 300px;
+    max-width: 300px;
     padding: 4vh;
     background-color: #fff;
     border: 2px solid #393939;

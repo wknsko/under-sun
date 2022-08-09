@@ -47,6 +47,7 @@ export default {
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
+    color: #393939;
 }
 .about h2 {
     font-family: 'Dhurjati';
